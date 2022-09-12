@@ -82,7 +82,7 @@ select {
     position: fixed;
     width: 100%;
     z-index: 20;
-    background-color: #900;
+    background-color: black;
     margin: 0 auto;
 }
 
@@ -96,13 +96,13 @@ select {
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    border: 4px solid #D4D925;
+    border: 4px solid whitesmoke;
     padding: auto;
     min-width: auto;
     min-height: auto;
     font-size: 26px;
     padding: 16px 14px;
-    color:#D4D925;
+    color:black;
     width: auto;
     font-weight: 400;
     text-decoration: underline;
@@ -137,11 +137,11 @@ body{
 }
 
 .footercontents {
-    background-color: #FFEE63;
-    color: black;
+    background-color: khaki;
+    color: whitesmoke;
     height: auto;
     width: auto;
-    border: 4px solid #900;
+    border: 4px solid whitesmoke;
 }
 
 .footerutilities {
