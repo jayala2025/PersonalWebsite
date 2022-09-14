@@ -92,7 +92,9 @@ select {
     font-size: 60px;
 }
 
-
+a{
+  color: red;
+}
 .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +115,7 @@ select {
 
 body{
     background-color: black;
-    color: khaki;
+    color: red;
     border: 0 auto;
     margin: 0 auto;
     height: auto;
@@ -137,7 +139,7 @@ body{
 }
 
 .footercontents {
-    background-color: khaki;
+    background-color: darkgray;
     color: whitesmoke;
     height: auto;
     width: auto;
