@@ -76,13 +76,13 @@ select {
 
 /*needed to reset CSS */
 * {
-  font-family:'Ibarra Real Nova', 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
 }
 .header {
     position: fixed;
     width: 100%;
     z-index: 20;
-    background-color: black;
+    background-color: #2B2D42;
     margin: 0 auto;
 }
 
@@ -93,12 +93,12 @@ select {
 }
 
 a{
-  color: red;
+  color: #D80032;
 }
 .navbar {
     display: flex;
     justify-content: space-evenly;
-    border: 4px solid whitesmoke;
+    /* border: 4px solid whitesmoke; */
     padding: auto;
     min-width: auto;
     min-height: auto;
@@ -106,7 +106,7 @@ a{
     padding: 16px 14px;
     color:black;
     width: auto;
-    font-weight: 400;
+    font-weight: 800;
     text-decoration: underline;
 }
 
@@ -114,36 +114,78 @@ a{
 
 
 body{
-    background-color: black;
-    color: red;
+    background-color: #8D99AE;
+    color: #EDF2F4;
     border: 0 auto;
     margin: 0 auto;
     height: auto;
-    width:auto;
+    width: auto;
+    
 }
 
 .introparagraph {
-    text-align: center;
+    text-align: left;
     border: 40px;
-    padding: 100px;
+    padding: 85px;
+    padding-bottom: 50px;
     height: auto;
-    width: auto;
     font-size: 22px;
     position: relative;
     top: 80px;
 }
 
-.interestslist {
-    text-align: center;
+p{
+  font-size: 22px;
+}
+
+li{
+  text-align: left;
+  font-size: 22px;
+}
+.cs-subfields {
+    text-align: left;
+    font-size: 22px;
+    padding: 85px;
+    padding-bottom: 50px;
     position: relative;
 }
 
+.passion-list{
+    font-size: 22px;
+    padding: 85px;
+    padding-bottom: 50px;
+}
+
+.work-exp{
+  font-size: 22px;
+  padding: 85px;
+  padding-bottom: 50px;
+}
+
+.looking-for-work{
+  padding-top: 85px;
+}
+
+.parting-words{
+  font-size: 18px;
+  padding: 85px;
+  padding-bottom: 50px;
+}
+
+.quote {
+  text-align: center;
+  padding: 85px;
+  padding-bottom: 50px;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+
 .footercontents {
-    background-color: darkgray;
-    color: whitesmoke;
+    background-color: #2b2d42;
+    color: #d80032;
     height: auto;
     width: auto;
-    border: 4px solid whitesmoke;
 }
 
 .footerutilities {
@@ -168,12 +210,7 @@ body{
     height: 20%;
 }
 
-.quote {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 800;
-  font-style: italic;
-}
+
 
 .socialicons {
   display: flex;
