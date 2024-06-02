@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.paheader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: #2B2D42;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.paheadertitle {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+a {
+    color: #D80032;
+}
+
+.panavbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 14px;
+    font-size: 26px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.display-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to account for header */
+    margin-top: 100px; /* Add margin to push below the header */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #8D99AE;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front, .back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+/* Paper flip effect */
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: white;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+/* Paper stack order */
+#page-one {
+    z-index: 3;
+}
+
+#page-two {
+    z-index: 2;
+}
+
+#page-three {
+    z-index: 1;
+}
